@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		10849C34225613C0009FC0F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C33225613C0009FC0F2 /* AppDelegate.swift */; };
-		10849C36225613C0009FC0F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C35225613C0009FC0F2 /* ViewController.swift */; };
+		10849C36225613C0009FC0F2 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C35225613C0009FC0F2 /* UsersViewController.swift */; };
 		10849C39225613C0009FC0F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10849C37225613C0009FC0F2 /* Main.storyboard */; };
 		10849C3B225613C1009FC0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10849C3A225613C1009FC0F2 /* Assets.xcassets */; };
 		10849C3E225613C1009FC0F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10849C3C225613C1009FC0F2 /* LaunchScreen.storyboard */; };
 		10849C49225613C1009FC0F2 /* MoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C48225613C1009FC0F2 /* MoyaTests.swift */; };
 		10849C54225613C1009FC0F2 /* MoyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C53225613C1009FC0F2 /* MoyaUITests.swift */; };
+		10849C6B225616C4009FC0F2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C6A225616C4009FC0F2 /* User.swift */; };
+		10849C6D225619B2009FC0F2 /* UsersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C6C225619B2009FC0F2 /* UsersInteractor.swift */; };
+		10849C6F225619BC009FC0F2 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C6E225619BC009FC0F2 /* UsersPresenter.swift */; };
+		10849C71225619D2009FC0F2 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C70225619D2009FC0F2 /* UsersRouter.swift */; };
+		10849C73225619E2009FC0F2 /* UsersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C72225619E2009FC0F2 /* UsersProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		10849C30225613C0009FC0F2 /* Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10849C33225613C0009FC0F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10849C35225613C0009FC0F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10849C35225613C0009FC0F2 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		10849C38225613C0009FC0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10849C3A225613C1009FC0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10849C3D225613C1009FC0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		10849C4F225613C1009FC0F2 /* MoyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10849C53225613C1009FC0F2 /* MoyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaUITests.swift; sourceTree = "<group>"; };
 		10849C55225613C1009FC0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10849C6A225616C4009FC0F2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		10849C6C225619B2009FC0F2 /* UsersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInteractor.swift; sourceTree = "<group>"; };
+		10849C6E225619BC009FC0F2 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		10849C70225619D2009FC0F2 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
+		10849C72225619E2009FC0F2 /* UsersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,8 @@
 		10849C32225613C0009FC0F2 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
+				10849C612256157B009FC0F2 /* Users */,
 				10849C33225613C0009FC0F2 /* AppDelegate.swift */,
-				10849C35225613C0009FC0F2 /* ViewController.swift */,
 				10849C37225613C0009FC0F2 /* Main.storyboard */,
 				10849C3A225613C1009FC0F2 /* Assets.xcassets */,
 				10849C3C225613C1009FC0F2 /* LaunchScreen.storyboard */,
@@ -123,6 +133,67 @@
 				10849C55225613C1009FC0F2 /* Info.plist */,
 			);
 			path = MoyaUITests;
+			sourceTree = "<group>";
+		};
+		10849C612256157B009FC0F2 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				10849C69225615E2009FC0F2 /* View */,
+				10849C67225615AC009FC0F2 /* Interactor */,
+				10849C66225615A6009FC0F2 /* Presenter */,
+				10849C652256159F009FC0F2 /* Entity */,
+				10849C68225615C5009FC0F2 /* Router */,
+				10849C6422561599009FC0F2 /* Protocols */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		10849C6422561599009FC0F2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				10849C72225619E2009FC0F2 /* UsersProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		10849C652256159F009FC0F2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				10849C6A225616C4009FC0F2 /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		10849C66225615A6009FC0F2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				10849C6E225619BC009FC0F2 /* UsersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		10849C67225615AC009FC0F2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				10849C6C225619B2009FC0F2 /* UsersInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		10849C68225615C5009FC0F2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				10849C70225619D2009FC0F2 /* UsersRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		10849C69225615E2009FC0F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10849C35225613C0009FC0F2 /* UsersViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10849C36225613C0009FC0F2 /* ViewController.swift in Sources */,
+				10849C6F225619BC009FC0F2 /* UsersPresenter.swift in Sources */,
+				10849C71225619D2009FC0F2 /* UsersRouter.swift in Sources */,
+				10849C36225613C0009FC0F2 /* UsersViewController.swift in Sources */,
+				10849C6D225619B2009FC0F2 /* UsersInteractor.swift in Sources */,
+				10849C73225619E2009FC0F2 /* UsersProtocol.swift in Sources */,
 				10849C34225613C0009FC0F2 /* AppDelegate.swift in Sources */,
+				10849C6B225616C4009FC0F2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
