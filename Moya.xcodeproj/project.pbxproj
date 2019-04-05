@@ -19,6 +19,10 @@
 		10849C6F225619BC009FC0F2 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C6E225619BC009FC0F2 /* UsersPresenter.swift */; };
 		10849C71225619D2009FC0F2 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C70225619D2009FC0F2 /* UsersRouter.swift */; };
 		10849C73225619E2009FC0F2 /* UsersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10849C72225619E2009FC0F2 /* UsersProtocol.swift */; };
+		10B7B84A225789C700BE3464 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B7B849225789C700BE3464 /* UserDetailsViewController.swift */; };
+		10B7B84C22578A0B00BE3464 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B7B84B22578A0B00BE3464 /* UserDetailPresenter.swift */; };
+		10B7B84E22578A1700BE3464 /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B7B84D22578A1700BE3464 /* UserDetailRouter.swift */; };
+		10B7B85022578A2100BE3464 /* UserDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B7B84F22578A2100BE3464 /* UserDetailProtocol.swift */; };
 		28454EA6EF8BBA23FAC1C4CC /* Pods_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4E9715A2C3CB32DDF69395 /* Pods_Moya.framework */; };
 		9F90084E29348EAEFB671CC5 /* Pods_MoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F2227282CE2E01C1F7A64D /* Pods_MoyaUITests.framework */; };
 		CA326C6FFDBB14D76C1191AF /* Pods_MoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B68C35FF8DB655CCC75D3F /* Pods_MoyaTests.framework */; };
@@ -60,6 +64,10 @@
 		10849C6E225619BC009FC0F2 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
 		10849C70225619D2009FC0F2 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
 		10849C72225619E2009FC0F2 /* UsersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProtocol.swift; sourceTree = "<group>"; };
+		10B7B849225789C700BE3464 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		10B7B84B22578A0B00BE3464 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		10B7B84D22578A1700BE3464 /* UserDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
+		10B7B84F22578A2100BE3464 /* UserDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailProtocol.swift; sourceTree = "<group>"; };
 		1DE90DBDE1F74FB588684DC8 /* Pods-Moya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moya/Pods-Moya.release.xcconfig"; sourceTree = "<group>"; };
 		395127E3B1F0F6C0BFA421B8 /* Pods-MoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaTests/Pods-MoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		446A1F40DC1DD7D457B802E5 /* Pods-MoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaTests/Pods-MoyaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +132,7 @@
 		10849C32225613C0009FC0F2 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
+				10B7B8442257897600BE3464 /* UserDetail */,
 				10849C612256157B009FC0F2 /* Users */,
 				10849C33225613C0009FC0F2 /* AppDelegate.swift */,
 				10849C37225613C0009FC0F2 /* Main.storyboard */,
@@ -209,6 +218,49 @@
 			isa = PBXGroup;
 			children = (
 				10849C35225613C0009FC0F2 /* UsersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10B7B8442257897600BE3464 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				10B7B848225789A700BE3464 /* View */,
+				10B7B8472257899200BE3464 /* Presenter */,
+				10B7B8462257898700BE3464 /* Router */,
+				10B7B8452257898000BE3464 /* Protocols */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		10B7B8452257898000BE3464 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				10B7B84F22578A2100BE3464 /* UserDetailProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		10B7B8462257898700BE3464 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				10B7B84D22578A1700BE3464 /* UserDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		10B7B8472257899200BE3464 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				10B7B84B22578A0B00BE3464 /* UserDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		10B7B848225789A700BE3464 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10B7B849225789C700BE3464 /* UserDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -430,9 +482,13 @@
 				10849C6F225619BC009FC0F2 /* UsersPresenter.swift in Sources */,
 				10849C71225619D2009FC0F2 /* UsersRouter.swift in Sources */,
 				10849C36225613C0009FC0F2 /* UsersViewController.swift in Sources */,
+				10B7B85022578A2100BE3464 /* UserDetailProtocol.swift in Sources */,
 				10849C6D225619B2009FC0F2 /* UsersInteractor.swift in Sources */,
 				10849C73225619E2009FC0F2 /* UsersProtocol.swift in Sources */,
 				10849C34225613C0009FC0F2 /* AppDelegate.swift in Sources */,
+				10B7B84C22578A0B00BE3464 /* UserDetailPresenter.swift in Sources */,
+				10B7B84A225789C700BE3464 /* UserDetailsViewController.swift in Sources */,
+				10B7B84E22578A1700BE3464 /* UserDetailRouter.swift in Sources */,
 				10849C6B225616C4009FC0F2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

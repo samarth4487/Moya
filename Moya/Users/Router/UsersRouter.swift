@@ -11,7 +11,9 @@ import UIKit
 class UsersRouter: UsersRouterProtocol {
     
     func pushToUserDetail(with user: User, from view: UIViewController) {
-        
+        let userDetailViewController = view.storyboard?.instantiateViewController(withIdentifier: "userDetail") as! UserDetailsViewController
+        UserDetailRouter.createUserDetailModule(with: userDetailViewController, and: user)
+        view.navigationController?.pushViewController(userDetailViewController, animated: true)
     }
     
     class func createUsersModule(usersRef: UsersViewController) {
