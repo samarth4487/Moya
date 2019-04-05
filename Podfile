@@ -6,7 +6,7 @@ target 'Moya' do
   use_frameworks!
 
   # Pods for Moya
-pod 'Alamofire'
+
   target 'MoyaTests' do
     inherit! :search_paths
     # Pods for testing
